@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Share Tech', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #ea1212 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8px;
+    padding: 20px;
+    color: rgb(26, 22, 22);
+    background-color: #343a40;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"), linear-gradient(to right top, #343a40, #2b2c31, #211f22, #151314, #000000);
+}
+
+:root {
+    view-transition-name: root;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    margin-bottom: 0px;
+    font-weight: 800;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+h2 {
+    color: #000000;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.h4{
+    text-align: center;
+    border-bottom: 5px;
+}
+.tab-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #667eea;
+}
+
+.tab{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.form {
+    display: block; 
+    margin-top: 0em;
+    unicode-bidi: isolate;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i]) {
+    overflow-clip-margin: 0px !important;
+    overflow: clip !important;
+}
+
+.input[type="text" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+input:not([type="image" i], [type="range" i], [type="checkbox" i], [type="radio" i]) {
+    overflow-clip-margin: 0px ;
+    overflow: clip;
+}
+
+input[type="password" i] {
+    -webkit-text-security: disc;
+    padding-block: 1px;
+    padding-inline: 2px;
+    padding: 12px 20px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #667eea 0%, #FF0066 100%);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;  
+}
+
+.admin-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.admin-link a {
+    color: #0c0c0c;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.admin-link a:hover{
+    color: #ea480c;
+}
+.contact-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-link a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.contact-link a:hover{
+    color: #ea480c;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+.link-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link-container a {
+    color: #ea480c;
+    text-decoration: none;  
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.error-message {
+    color: rgb(243, 8, 8);
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.success-message{
+    color: rgb(99, 216, 59);
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}

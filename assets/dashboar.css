@@ -1,0 +1,297 @@
+
+body.unified-theme * {
+    --theme-base-primary-color-h: 27;
+    --theme-base-primary-color-s: 89%;
+    --theme-base-primary-color-l: 48%;
+    --theme-primary-custom-100: hsl(27, 89%, calc(48% + ((100% - 48%) * .9)));
+    --theme-primary-custom-200: hsl(27, 89%, calc(48% + ((100% - 48%) * .75)));
+    --theme-primary-custom-300: hsl(27, 89%, calc(48% + ((100% - 48%) * .5)));
+    --theme-primary-custom-400: hsl(var(--theme-base-primary-color-h), var(--theme-base-primary-color-s), var(--theme-base-primary-color-l));
+    --theme-primary-custom-500: hsl(27, 89%, calc(48% + (48% * -.3)));
+    --theme-primary-custom-600: hsl(27, 89%, calc(48% + (48% * -.6)));
+    --theme-primary-custom: var(--theme-primary-custom-400);
+    --theme-button-color: initial;
+    --theme-button-hover-color: initial;
+    --theme-button-hover-background-color: initial;
+    --theme-button-active-background-color: initial;
+    --theme-button-selected-color: initial;
+    --theme-button-selected-background-color: initial;
+    --theme-button-outlined-border-color: initial;
+    --theme-button-outlined-selected-border-color: initial;
+    --theme-button-primary-color: initial;
+    --theme-button-primary-active-color: initial;
+    --theme-button-primary-hover-color: initial;
+    --theme-button-primary-selected-color: initial;
+    --theme-button-primary-background-color: initial;
+    --theme-button-primary-active-background-color: initial;
+    --theme-button-primary-hover-background-color: initial;
+    --theme-button-primary-selected-background-color: initial;
+    --theme-background-color: var(--white);
+    --theme-background-position: top left;
+    --theme-background-repeat: repeat;
+    --theme-background-size: auto;
+    --theme-background-attachment: auto;
+    --theme-content-background-color: var(--white);
+    --theme-content-border-color: var(--black-225);
+    --theme-header-background-color: var(--theme-primary);
+    --theme-header-background-position: center left;
+    --theme-header-background-repeat: repeat;
+    --theme-header-background-size: auto;
+    --theme-header-background-border-bottom: 0;
+    --theme-header-link-color: var(--theme-primary);
+    --theme-header-sponsored-color: hsla(0, 0%, 100%, 0.4);
+    --theme-header-foreground-color: transparent;
+    --theme-header-foreground-position: bottom right;
+    --theme-header-foreground-repeat: no-repeat;
+    --theme-header-foreground-size: auto;
+    --theme-footer-background-color: hsl(210, 8%, 5%);
+    --theme-footer-background-position: top left;
+    --theme-footer-background-repeat: no-repeat;
+    --theme-footer-background-size: auto;
+    --theme-footer-background-border-top: 0;
+    --theme-footer-title-color: var(--black-250);
+    --theme-footer-text-color: var(--black-300);
+    --theme-footer-link-color: var(--black-300);
+    --theme-footer-link-color-hover: var(--black-200);
+    --theme-footer-divider-color: var(--black-500);
+    --theme-footer-padding-top: 0;
+    --theme-footer-padding-bottom: 0;
+    --theme-link-color: initial;
+    --theme-link-color-hover: initial;
+    --theme-link-color-visited: initial;
+    --theme-body-font-family: var(--ff-sans);
+    --theme-body-font-color: var(--black-600);
+    --theme-post-title-font-family: var(--ff-sans);
+    --theme-post-title-color: var(--theme-link-color);
+    --theme-post-title-color-hover: var(--theme-link-color-hover);
+    --theme-post-title-color-visited: var(--theme-link-color-visited);
+    --theme-post-body-font-family: var(--ff-sans);
+    --theme-post-owner-background-color: var(--theme-secondary-100);
+    --theme-post-owner-new-background-color: var(--theme-secondary-200);
+    --theme-topbar-bottom-border: 1px solid var(--black-225);
+}
+
+.s-btn.is-selected.s-btn__outlined, .s-btn--radio:checked+.s-btn.s-btn__outlined {
+    border-color: var(--_bu-outlined-bc-selected);
+    background-color: var(--_bu-outlined-bg-selected);
+    color: var(--_bu-outlined-fc-selected);
+}
+.s-btn.s-btn__sm {
+    --_bu-fs: var(--fs-caption);
+}
+.s-btn.s-btn__outlined {
+    border-color: var(--_bu-outlined-bc);
+    background-color: var(--_bu-outlined-bg, inherit);
+}
+.s-btn.is-selected, .s-btn--radio:checked+.s-btn {
+    background-color: var(--_bu-bg-selected);
+    border-color: var(--_bu-bc-selected, transparent);
+    color: var(--_bu-fc-selected);
+}
+ .container {
+    max-width: 800px;   
+    margin: 20px auto;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(10, 10, 10, 0.1);
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 20px; /* Space below the welcome message */
+}
+
+.welcome h1 {
+    font-size: 2.5em; /* Larger font size for emphasis */
+    color: #f90e0e; /* Primary color for welcome message */
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+h2 {
+    margin-top: 20px; /* Space above the posts section */
+    font-size: 1.8em; /* Slightly larger font size for headings */
+    color: #333; /* Consistent text color */
+    border-bottom: 2px solid #007bff; /* Underline effect for emphasis */
+    padding-bottom: 5px; /* Space below the border */
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input[type="text"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #667eea 0%, #FF0066 100%);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(135deg, #667eea 0%, #FF0066 100%);;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s ease;
+    transform: translateY(-2px);
+}
+
+/*edit profile*/
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="password"]{
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(135deg, #667eea 0%, #FF0066 100%);
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-right: 10px;
+}
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    margin: 20px 0; /* Optional: Add some margin above and below */
+}
+
+.action-buttons .btn {
+    margin: 0 10px; /* Add space between buttons */
+    padding: 12px 20px; /* Increase padding for larger buttons */
+    font-size: 18px; /* Increase font size */
+    text-align: center; /* Center text within the button */
+    text-decoration: none; /* Remove underline */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.posts {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Space between cells */
+}
+.posts {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between posts */
+}
+
+.success{
+    color: rgb(77, 255, 0);
+    text-align: center;
+}
+.submit{
+    text-align: center;
+    width: 100%;
+    border-radius: 20px;
+}
+.submit:hover{
+    transform: translateY(-2px);
+    margin-right: 20px;
+}   
+
+.filter-form {
+    display: none; /* Initially hidden */
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+}
+
+.filter-option {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.post {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.post-meta {
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #fff;
+    background: linear-gradient(135deg, #667eea 0%, #FF0066 100%);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
